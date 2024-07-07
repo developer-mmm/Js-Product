@@ -16,7 +16,7 @@ async function Product({ params }) {
   const product = await getData(params.id);
   return (
     <div className="card">
-    <div className="border border-zinc-200 dark:border-zinc-800 rounded-lg p-4 max-w-sm mx-auto ">
+    <div className="border border-zinc-200 dark:border-zinc-800 rounded-lg p-4 max-w-sm mx-auto shadow-xl">
       <img
         src={product.thumbnail} 
         alt="Product Image"
@@ -30,8 +30,11 @@ async function Product({ params }) {
       </p>
       <div className="flex justify-between items-center mb-4">
         <span className="text-xl text-yellow-400 font-bold">${product.price}</span>
-        
+        <p>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</p>
       </div>
+      <button><a className="text-xl text-blue-800" href="/products">
+      ⬅️ back 
+        </a></button>
     </div>
   </div>
   );
