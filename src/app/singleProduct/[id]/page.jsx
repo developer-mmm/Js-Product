@@ -24,7 +24,8 @@ async function Product({ params }) {
         height={240}
         className="object-cover w-full rounded-lg mb-4"
       />
-      <h2 className="font-bold text-lg mb-2">{product.title}</h2>
+       <h1 className="font-bold text-green-600 text-lg mb-2 ">{product.category}:</h1>
+      <h2 className="font-bold text-lg mb-2">{product.title}!</h2>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-3">
         {product.description}
       </p>
