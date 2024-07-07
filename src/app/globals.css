@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .align-elements {
-        @apply max-w-5xl mx-auto px-4;
-    }
+@layer components {
+  .align-elements {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  .wrapper {
+    height: 660px;
+    min-width: 1525px;
+    margin-top: -30px;
+    margin-left: -140px;
+    background-image: url(./bg-image.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
 }

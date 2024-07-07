@@ -20,9 +20,18 @@ async function products() {
       {products.map((product) => {
         return (
           <div key={product.id}>
-            <Link href={`/singleProduct/${product.id}`}>
-              <h1 className="text-3xl">{product.title}</h1>
-            </Link>
+            <details className="dropdown">
+              <summary  className="btn m-1">{product.title} </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                <li>
+                    <Link href={`/singleProduct/${product.id}`}>
+                      <h1 className="text-3xl hover:text-green-600">
+                         Read more....
+                      </h1>
+                    </Link>
+                </li>
+              </ul>
+            </details>
           </div>
         );
       })}
