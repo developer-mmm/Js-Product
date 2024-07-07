@@ -8,7 +8,7 @@ function Home() {
       <div className="flex justify-around mt-6">
         <h1 className="text-5xl text-yellow-500">Online Shopping</h1>
         <a className="text-5xl text-fuchsia-800" href="products">
-          Our Store ➡️ 
+          ↖️ Our Store 
         </a>
       </div>
     </div>
