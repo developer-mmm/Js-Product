@@ -12,24 +12,28 @@ const getData = async () => {
 
 async function products() {
   const { products } = await getData();
-  console.log(products);
   return (
     <div>
       {products.map((product) => {
         return (
-          <div key={product.id}>
-            <details className="dropdown">
-              <summary className="btn m-1">{product.title} </summary>
-              <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                <li>
-                  <Link href={`/singleProduct/${product.id}`}>
-                    <h1 className="text-3xl hover:text-green-600">
-                      Read more....
-                    </h1>
-                  </Link>
-                </li>
-              </ul>
-            </details>
+          <div className="flex" key={product.id}>
+            <div className="border border-zinc-200 dark:border-zinc-800 mt-6 rounded-lg p-4 max-w-sm mx-auto hover:shadow-2xl shadow-xl">
+              <img
+                src={product.thumbnail}
+                alt="Product Image"
+                width={240}
+                height={240}
+                className="object-cover w-full rounded-lg mb-4"
+              />
+              <h1 className="font-bold text-green-600 text-2xl mb-2 ">
+                {product.title}:
+              </h1>
+              <Link href={`/singleProduct/${product.id}`}>
+                <h1 className="text-xl  hover:text-green-600">
+                  Read more....
+                </h1>
+              </Link>
+            </div>
           </div>
         );
       })}

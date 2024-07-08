@@ -5,7 +5,7 @@ function Navbar() {
     <div className="bg-base-200 ">
       <div className="navbar gap-20  align-elements">
       <div className="flex-1  ">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Online Shop</a>
       </div>
       <ul className="menu  menu-horizontal">
         <li>
