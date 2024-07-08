@@ -13,7 +13,7 @@ const getData = async () => {
 async function products() {
   const { products } = await getData();
   return (
-    <div>
+    <div className="grid grid-cols-4 gap-6">
       {products.map((product) => {
         return (
           <div className="flex" key={product.id}>
