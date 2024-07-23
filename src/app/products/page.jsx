@@ -10,6 +10,7 @@ const getData = async () => {
   return data;
 };
 
+
 async function products() {
   const { products } = await getData();
   return (
